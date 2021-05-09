@@ -7,13 +7,13 @@ function setup() {
   createCanvas(1600,400);
  
  bullet = createSprite(50,100,50,50);
- bullet.shapeColor = "black"; 
- 
+
 
  
  
  
  wall = createSprite(1500,200,thickness,height/2);
+ wall.shapeColor = "black"; 
  
 
 
@@ -43,12 +43,12 @@ function draw() {
   
   
   if(damage>10){
-    wall.shapeColor=color(255,0,0);
+    bullet.shapeColor=color(255,0,0);
   }
 
   if(damage<10){
 
-    wall.shapeColor=color(0,255,0);
+    bullet.shapeColor=color(0,255,0);
   }
  }
  
